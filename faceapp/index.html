@@ -1,0 +1,924 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="stylesheet/normalize.css">
+  <link rel="stylesheet" href="stylesheet/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <link rel="stylesheet" href="stylesheet/project.css">
+  <title>Face App</title>
+</head>
+<body class="page">
+  <header class="page__header header" id="header">
+    <div class="wrapper">
+      <div class="header__inner">
+        <a class="header__logo logo" href="#hero" id="header-logo">
+          <img src="images/logo-menu.png" alt="" class="logo__img">
+        </a>
+        <div class="header__navigation-group" id="navigation-group">
+          <nav class="navigation header__navigation" id="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#network" class="navigation__link">Network</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#news" class="navigation__link">News</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#team" class="navigation__link">Team</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#partners" class="navigation__link">Partners</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#docs" class="navigation__link">Docs</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#wallet" class="navigation__link">Wallet</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#explorer" class="navigation__link">Explorer</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__social-list social-list">
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <span class="social-icon">
+                  <img src="images/social-twitter.png" alt="" class="social-icon__img">
+                </span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <span class="social-icon">
+                  <img src="images/social-youtube.png" alt="" class="social-icon__img">
+                </span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <span class="social-icon">
+                  <img src="images/social-facebook.png" alt="" class="social-icon__img">
+                </span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <span class="social-icon">
+                  <img src="images/social-github.png" alt="" class="social-icon__img">
+                </span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <span class="social-icon">
+                  <img src="images/social-tick-tock.png" alt="" class="social-icon__img">
+                </span>
+              </a>
+            </li>
+          </ul>
+          <ul class="header__language-select language-select">
+            <li class="language-select__item">
+              <a href="" class="language-select__link">
+                <img src="images/lang-en.png" alt="" class="language-select__img">
+              </a>
+            </li>
+            <li class="language-select__item">
+              <a href="" class="language-select__link">
+                <img src="images/lang-cn.png" alt="" class="language-select__img">
+              </a>
+            </li>
+            <li class="language-select__item">
+              <a href="" class="language-select__link">
+                <img src="images/lang-ru.png" alt="" class="language-select__img">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__menu-button">
+          <div class="menu-button" id="menu-button">
+            <span class="visually-hidden">Menu button</span>
+            <span class="menu-button__burger"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page__main main scroll-wrapper">
+    <section class="section hero" id="hero">
+      <div class="wrapper">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <div class="hero__logo">
+              <img src="images/logo-main.png" alt="" class="hero__logo-img">
+            </div>
+            <div class="hero__about">
+              <div class="hero__subtitle">
+                Hot off the press
+              </div>
+              <h1 class="hero__title">
+                Это иконки, которые состоят из линий или контуров.
+              </h1>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="hero__product-present">
+              <div class="product-present">
+                <div class="product-present__item product-present__item--near">
+                  <div class="product-present__video-wrap">
+                    <div class="product-present__video">
+                      <div class="product-present-video">
+                        <video
+                          class="product-present-video__video"
+                          id="product-preview-video"
+                          loop
+                          muted
+                          playsinline
+                          autoplay
+                        >
+                          <source src="video/product-preview.webm" type="video/webm">
+                          <source src="video/product-preview.ogv" type="video/ogg">
+                          <source src="video/product-preview.mp4" type="video/mp4">
+                          <source src="video/product-preview.mov" type="video/mp4">
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-present__image">
+                    <img src="images/phone-corps.png" alt="">
+                  </div>
+                </div>
+                <div class="product-present__item product-present__item--far">
+                  <img src="images/phone-id.png" alt="">
+                </div>
+              </div>
+            </div>
+<!--            <div class="hero__present">-->
+<!--              <img src="images/phone1.png" alt="" class="hero__present-img">-->
+<!--            </div>-->
+            <div class="hero_payments">
+              <img src="images/logos1.png" alt="" class="hero_payments-img">
+            </div>
+          </div>
+        </div>
+        <div class="hero__delimiter delimiter"></div>
+        <div class="hero__app-platform app-platform">
+          <div class="app-platform__wp">WhitePaper</div>
+          <ul class="app-platform__store">
+            <li class="app-platform__store-item">
+              <a href="#" class="app-platform__store-link app-platform__store-link--gp">
+              </a>
+            </li>
+            <li class="app-platform__store-item">
+              <a href="#" class="app-platform__store-link app-platform__store-link--as">
+              </a>
+            </li>
+            <li class="app-platform__store-item">
+              <a href="#" class="app-platform__store-link app-platform__store-link--gh">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section">
+      <div class="wrapper">
+        <div class="section__heading section__heading--text-center">
+          <h2 class="heading heading--uppercase heading--level-2">Key Features</h2>
+        </div>
+        <div class="feature-group">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg">
+              <div class="feature-group__item feature">
+                <div class="feature__icon">
+                  <img src="images/feature-1.png" alt="" class="feature__img">
+                </div>
+                <div class="feature__description">
+                  Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg">
+              <div class="feature-group__item feature">
+                <div class="feature__icon">
+                  <img src="images/feature-2.png" alt="" class="feature__img">
+                </div>
+                <div class="feature__description">
+                  Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg">
+              <div class="feature-group__item feature">
+                <div class="feature__icon">
+                  <img src="images/feature-3.png" alt="" class="feature__img">
+                </div>
+                <div class="feature__description">
+                  Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg">
+              <div class="feature-group__item feature">
+                <div class="feature__icon">
+                  <img src="images/feature-4.png" alt="" class="feature__img">
+                </div>
+                <div class="feature__description">
+                  Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrapper">
+        <div class="row justify-content-center justify-content-md-start">
+          <div class="col-12 col-md-6">
+            <div class="section__heading">
+              <h2 class="heading heading--uppercase heading--level-2">Схема <br /> взаимодействия</h2>
+            </div>
+            <div class="section__description about-description">
+              Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="interaction-preview">
+              <img src="images/phone2.png" alt="" class="interaction-preview__img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrapper">
+        <div class="section__heading section__heading--text-center">
+          <h2 class="heading heading--uppercase heading--level-2">Key Features</h2>
+        </div>
+
+        <div class="roadmap-group">
+          <div class="row">
+            <div class="col-6 col-md-4 col-lg">
+              <div class="roadmap-group__item roadmap">
+                <div class="roadmap__pointer">
+                  <img src="images/arrow.png" alt="" class="roadmap__pointer-img">
+                </div>
+                <div class="roadmap__step-name">1Q 2021</div>
+                <ul class="roadmap__list">
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      TNT-20 “Theta Network Token” minter expanded for NFTs
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      Pre “Elite Edge Node” (TFUEL staking testing)
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      1-click Delegated staking within Theta wallet
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      Decentralized exchange (DEX) on Theta blockchain
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      NFT marketplace on Theta blockchain
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      2nd Theta Hackathon launche
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg">
+              <div class="roadmap-group__item roadmap">
+                <div class="roadmap__pointer">
+                  <img src="images/arrow.png" alt="" class="roadmap__pointer-img">
+                </div>
+                <div class="roadmap__step-name">2Q 2021</div>
+                <ul class="roadmap__list">
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      TNT-20 “Theta Network Token” minter expanded for NFTs
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      Pre “Elite Edge Node” (TFUEL staking testing)
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      1-click Delegated staking within Theta wallet
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      Decentralized exchange (DEX) on Theta blockchain
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      NFT marketplace on Theta blockchain
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      2nd Theta Hackathon launche
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg">
+              <div class="roadmap-group__item roadmap">
+                <div class="roadmap__pointer">
+                  <img src="images/arrow.png" alt="" class="roadmap__pointer-img">
+                </div>
+                <div class="roadmap__step-name">3Q 2021</div>
+                <ul class="roadmap__list">
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      TNT-20 “Theta Network Token” minter expanded for NFTs
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      Pre “Elite Edge Node” (TFUEL staking testing)
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      1-click Delegated staking within Theta wallet
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      Decentralized exchange (DEX) on Theta blockchain
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      NFT marketplace on Theta blockchain
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      2nd Theta Hackathon launche
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg">
+              <div class="roadmap-group__item roadmap">
+                <div class="roadmap__pointer">
+                  <img src="images/arrow.png" alt="" class="roadmap__pointer-img">
+                </div>
+                <div class="roadmap__step-name">4Q 2021</div>
+                <ul class="roadmap__list">
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      TNT-20 “Theta Network Token” minter expanded for NFTs
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      Pre “Elite Edge Node” (TFUEL staking testing)
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      1-click Delegated staking within Theta wallet
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      Decentralized exchange (DEX) on Theta blockchain
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      NFT marketplace on Theta blockchain
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      2nd Theta Hackathon launche
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg">
+              <div class="roadmap-group__item roadmap">
+                <div class="roadmap__pointer">
+                  <img src="images/arrow.png" alt="" class="roadmap__pointer-img">
+                </div>
+                <div class="roadmap__step-name">5Q 2021</div>
+                <ul class="roadmap__list">
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      TNT-20 “Theta Network Token” minter expanded for NFTs
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      Pre “Elite Edge Node” (TFUEL staking testing)
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      1-click Delegated staking within Theta wallet
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      Decentralized exchange (DEX) on Theta blockchain
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      NFT marketplace on Theta blockchain
+                    </div>
+                  </li>
+                  <li class="roadmap__list-item">
+                    <div class="roadmap__description">
+                      2nd Theta Hackathon launche
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="roadmaps__app-platform app-platform">
+            <div class="app-platform__wp">WhitePaper</div>
+            <ul class="app-platform__store">
+              <li class="app-platform__store-item">
+                <a href="#" class="app-platform__store-link app-platform__store-link--gp">
+                </a>
+              </li>
+              <li class="app-platform__store-item">
+                <a href="#" class="app-platform__store-link app-platform__store-link--as">
+                </a>
+              </li>
+              <li class="app-platform__store-item">
+                <a href="#" class="app-platform__store-link app-platform__store-link--gh">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrapper">
+        <div class="section__heading section__heading--text-center">
+          <h2 class="heading heading--uppercase heading--level-2">Press</h2>
+        </div>
+
+        <div class="slider-wrap">
+          <div class="splide js-advisors-press">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+
+                  <div class="press">
+                    <div class="press__logo">
+                      <img src="images/press-1.png" alt="" class="press__img">
+                    </div>
+                    <div class="press__title">
+                      <h3 class="heading heading--level-4">
+                        Фрагмент классической латыни
+                      </h3>
+                    </div>
+                    <div class="press__description">
+                      Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической
+                    </div>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="press">
+                    <div class="press__logo">
+                      <img src="images/press-2.png" alt="" class="press__img">
+                    </div>
+                    <div class="press__title">
+                      <h3 class="heading heading--level-4">
+                        Многие думают, что они думают
+                      </h3>
+                    </div>
+                    <div class="press__description">
+                      Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической
+                    </div>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="press">
+                    <div class="press__logo">
+                      <img src="images/press-3.png" alt="" class="press__img">
+                    </div>
+                    <div class="press__title">
+                      <h3 class="heading heading--level-4">
+                        Колледж Hampden-Sydney
+                      </h3>
+                    </div>
+                    <div class="press__description">
+                      Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической
+                    </div>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="press">
+                    <div class="press__logo">
+                      <img src="images/press-4.png" alt="" class="press__img">
+                    </div>
+                    <div class="press__title">
+                      <h3 class="heading heading--level-4">
+                        По факту от результата будет зависеть
+                      </h3>
+                    </div>
+                    <div class="press__description">
+                      Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической
+                    </div>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="press">
+                    <div class="press__logo">
+                      <img src="images/press-3.png" alt="" class="press__img">
+                    </div>
+                    <div class="press__title">
+                      <h3 class="heading heading--level-4">
+                        Колледж Hampden-Sydney
+                      </h3>
+                    </div>
+                    <div class="press__description">
+                      Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrapper">
+        <div class="section__heading section__heading--text-center">
+          <h2 class="heading heading--uppercase heading--level-2">Partners</h2>
+        </div>
+
+        <div class="partners-set">
+          <div class="row justify-content-center justify-content-md-start">
+            <div class="col-6 col-md-3">
+              <div class="partners">
+                <img src="images/partner-1.png" alt="" class="partners__img">
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="partners">
+                <img src="images/partner-2.png" alt="" class="partners__img">
+              </div>
+            </div>
+            <div class="col-4 col-md-3">
+              <div class="partners">
+                <img src="images/partner-3.png" alt="" class="partners__img">
+              </div>
+            </div>
+            <div class="col-4 col-md-3">
+              <div class="partners">
+                <img src="images/partner-4.png" alt="" class="partners__img">
+              </div>
+            </div>
+
+            <div class="col-4 col-md-3">
+              <div class="partners">
+                <img src="images/partner-5.png" alt="" class="partners__img">
+              </div>
+            </div>
+            <div class="col-4 col-md-3">
+              <div class="partners">
+                <img src="images/partner-6.png" alt="" class="partners__img">
+              </div>
+            </div>
+            <div class="col-4 col-md-3">
+              <div class="partners">
+                <img src="images/partner-7.png" alt="" class="partners__img">
+              </div>
+            </div>
+            <div class="col-4 col-md-3">
+              <div class="partners">
+                <img src="images/partner-8.png" alt="" class="partners__img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrapper">
+        <div class="section__heading section__heading--text-center">
+          <h2 class="heading heading--uppercase heading--level-2">AdvisOrs</h2>
+        </div>
+
+        <div class="slider-wrap">
+          <div class="splide js-advisors-advisors">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="person">
+                    <div class="person__photo-wrap">
+                      <div class="person__photo">
+                        <img src="images/person-1.png" alt="" class="person__img">
+                      </div>
+                    </div>
+                    <div class="person__info">
+                      <div class="person__name">
+                        Дмитрий Шишов
+                      </div>
+                      <div class="person__position">
+                        Founding Partner
+                      </div>
+                      <div class="person__text">
+                        Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="person">
+                    <div class="person__photo-wrap">
+                      <div class="person__photo">
+                        <img src="images/person-2.png" alt="" class="person__img">
+                      </div>
+                    </div>
+                    <div class="person__info">
+                      <div class="person__name">
+                        Дмитрий Шишов
+                      </div>
+                      <div class="person__position">
+                        Founding Partner
+                      </div>
+                      <div class="person__text">
+                        Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="person">
+                    <div class="person__photo-wrap">
+                      <div class="person__photo">
+                        <img src="images/person-3.png" alt="" class="person__img">
+                      </div>
+                    </div>
+                    <div class="person__info">
+                      <div class="person__name">
+                        Дмитрий Шишов
+                      </div>
+                      <div class="person__position">
+                        Founding Partner
+                      </div>
+                      <div class="person__text">
+                        Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="person">
+                    <div class="person__photo-wrap">
+                      <div class="person__photo">
+                        <img src="images/person-4.png" alt="" class="person__img">
+                      </div>
+                    </div>
+                    <div class="person__info">
+                      <div class="person__name">
+                        Дмитрий Шишов
+                      </div>
+                      <div class="person__position">
+                        Founding Partner
+                      </div>
+                      <div class="person__text">
+                        Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="person">
+                    <div class="person__photo-wrap">
+                      <div class="person__photo">
+                        <img src="images/person-2.png" alt="" class="person__img">
+                      </div>
+                    </div>
+                    <div class="person__info">
+                      <div class="person__name">
+                        Дмитрий Шишов
+                      </div>
+                      <div class="person__position">
+                        Founding Partner
+                      </div>
+                      <div class="person__text">
+                        Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="wrapper">
+        <div class="section__heading section__heading--text-center">
+          <h2 class="heading heading--uppercase heading--level-2">Team</h2>
+        </div>
+
+        <div class="team">
+          <div class="row">
+            <div class="col col-md-6">
+              <div class="team__person person person--direction-row">
+                <div class="person__photo-wrap">
+                  <div class="person__photo">
+                    <img src="images/person-1.png" alt="" class="person__img">
+                  </div>
+                </div>
+                <div class="person__info">
+                  <div class="person__name">
+                    Дмитрий Шишов
+                  </div>
+                  <div class="person__position">
+                    Founding Partner
+                  </div>
+                  <div class="person__text">
+                    Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-md-6">
+              <div class="team__person person person--direction-row">
+                <div class="person__photo-wrap">
+                  <div class="person__photo">
+                    <img src="images/person-2.png" alt="" class="person__img">
+                  </div>
+                </div>
+                <div class="person__info">
+                  <div class="person__name">
+                    Дмитрий Шишов
+                  </div>
+                  <div class="person__position">
+                    Founding Partner
+                  </div>
+                  <div class="person__text">
+                    Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-md-6">
+              <div class="team__person person person--direction-row">
+                <div class="person__photo-wrap">
+                  <div class="person__photo">
+                    <img src="images/person-3.png" alt="" class="person__img">
+                  </div>
+                </div>
+                <div class="person__info">
+                  <div class="person__name">
+                    Дмитрий Шишов
+                  </div>
+                  <div class="person__position">
+                    Founding Partner
+                  </div>
+                  <div class="person__text">
+                    Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-md-6">
+              <div class="team__person person person--direction-row">
+                <div class="person__photo-wrap">
+                  <div class="person__photo">
+                    <img src="images/person-4.png" alt="" class="person__img">
+                  </div>
+                </div>
+                <div class="person__info">
+                  <div class="person__name">
+                    Дмитрий Шишов
+                  </div>
+                  <div class="person__position">
+                    Founding Partner
+                  </div>
+                  <div class="person__text">
+                    Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer footer">
+    <div class="wrapper">
+      <div class="footer__inner">
+        <a class="footer__logo logo" href="#hero">
+          <img src="images/logo-main.png" alt="" class="logo__img">
+        </a>
+        <div class="footer__app-info app-info">
+          <ul class="app-info__rules rules-list">
+            <li class="rules-list__item">
+              <a href="" class="rules-list__link">Privacy Policy</a>
+            </li>
+            <li class="rules-list__item">
+              <a href="" class="rules-list__link">Terms</a>
+            </li>
+          </ul>
+          <span class="app-info__copyright copyright">&copy; 2021 FacePase, Inc.</span>
+        </div>
+        <ul class="footer__social-list social-list">
+          <li class="social-list__item">
+            <a href="" class="social-list__link">
+              <span class="social-icon">
+                <img src="images/social-twitter.png" alt="" class="social-icon__img">
+              </span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="" class="social-list__link">
+              <span class="social-icon">
+                <img src="images/social-youtube.png" alt="" class="social-icon__img">
+              </span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="" class="social-list__link">
+              <span class="social-icon">
+                <img src="images/social-facebook.png" alt="" class="social-icon__img">
+              </span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="" class="social-list__link">
+              <span class="social-icon">
+                <img src="images/social-github.png" alt="" class="social-icon__img">
+              </span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="" class="social-list__link">
+              <span class="social-icon">
+                <img src="images/social-tick-tock.png" alt="" class="social-icon__img">
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script src="javascript/project.js"></script>
+</body>
+</html>
