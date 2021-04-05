@@ -253,17 +253,26 @@ img {
   text-align: center;
 }
 
+.section__description {
+  text-align: left;
+  margin-top: 30px;
+}
+
 /*
  * hero block
  */
 
 .hero {
-  padding: 175px 0 100px;
+  padding: 145px 0 100px;
 }
 
 .hero_payments {
   max-width: 420px;
   margin: 30px auto 0;
+}
+
+.hero__description {
+  font-weight: bold;
 }
 
 .hero__delimiter {
@@ -277,26 +286,26 @@ img {
 }
 
 .hero__logo {
-  max-width: 400px;
-  margin-bottom: 75px;
+  max-width: 379px;
+  margin-bottom: 43px;
 }
 
 .hero__title {
-  font-size: 54px;
-  line-height: 74px;
+  font-size: 40px;
+  line-height: 48px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .hero__subtitle {
   text-transform: uppercase;
   font-style: italic;
   font-weight: bold;
-  padding-left: 20px;
-  font-size: 32px;
-  line-height: 30px;
-  margin-bottom: 15px;
+  font-size: 71px;
+  line-height: 79px;
   color: #ebb144;
+  margin-bottom: 40px;
 }
 
 .hero__present {
@@ -304,6 +313,10 @@ img {
   display: flex;
   justify-content: center;
   max-width: 430px;
+}
+
+.hero__product-present {
+  margin-top: 130px;
 }
 
 .product-present {
@@ -379,6 +392,7 @@ img {
   margin-right: 0;
 }
 
+.app-platform__tg,
 .app-platform__wp {
   display: block;
   font-size: 40px;
@@ -386,6 +400,7 @@ img {
   color: #FFFFFF;
   background-color: #ebb144;
   margin-right: 25px;
+  text-decoration: none;
 }
 
 .app-platform__store-link {
@@ -413,11 +428,10 @@ img {
  */
 
 .feature-group__item {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .feature__icon {
-  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -426,6 +440,7 @@ img {
 
 .feature__img {
   width: auto;
+  height: 162px;
 }
 
 .feature__description {
@@ -460,11 +475,53 @@ img {
 }
 
 /*
+ * product block
+ */
+
+.interaction-preview {
+  max-width: 340px;
+  margin-left: auto;
+}
+
+.product-phones-image {
+  max-width: 204px;
+}
+
+.product-phones-set {
+  display: flex;
+  margin: 0 -7px;
+}
+
+.product-phones-set__item {
+  position: relative;
+  left: -80px;
+  flex-shrink: 0;
+  padding: 0 7px;
+}
+
+.product-phones-set__item:first-child {
+  left: 0;
+  z-index: 1;
+}
+
+/*
  * roadmap block
  */
 
+.roadmap-arrow {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  display: flex;
+}
+
+.roadmap-arrow__svg-wrap {
+  position: absolute;
+}
+
 .roadmap-group__item {
-  margin-bottom: 20px;
+  max-width: 204px;
+  margin: 0 auto 34px;
 }
 
 .roadmap__step-name {
@@ -478,7 +535,7 @@ img {
 }
 
 .roadmap__list-item {
-  margin-bottom: 22px;
+  margin-bottom: 4px;
 }
 
 .roadmap__list-item:last-child {
@@ -700,18 +757,25 @@ img {
   }
 
   .hero {
-    padding-top: 190px;
+    padding-top: 100px;
   }
 
   .hero__logo {
-    max-width: 300px;
-    margin-bottom: 45px;
+    max-width: 270px;
+    margin-bottom: 40px;
     margin-top: 45px;
   }
 
   .hero__title {
-    font-size: 38px;
-    line-height: 52px;
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 28px;
+  }
+
+  .hero__subtitle {
+    font-size: 43px;
+    line-height: 56px;
+    margin-bottom: 25px;
   }
 
   .slider-wrap {
@@ -724,6 +788,10 @@ img {
 
   .person--direction-row {
     flex-direction: column;
+  }
+
+  .app-platform__tg, .app-platform__wp {
+    font-size: 22px;
   }
 }
 
@@ -859,6 +927,19 @@ img {
     margin-top: auto;
     margin-bottom: 50px;
   }
+
+  .interaction-preview {
+    display: none;
+  }
+
+  .product-phones-set {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-phones-set__item {
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -902,21 +983,21 @@ img {
   }
 
   .hero__logo {
-    /*display: none;*/
     margin: 0 auto 45px;
     max-width: 240px;
   }
 
   .hero__subtitle {
-    font-size: 20px;
-    text-align: center;
+    font-size: 24px;
+    line-height: 1.4;
     padding: 0;
+    margin-bottom: 12px;
   }
 
   .hero__title {
-    font-size: 30px;
+    font-size: 18px;
     line-height: 1.4;
-    text-align: center;
+    margin-bottom: 20px;
   }
 
   .hero__product-present {
@@ -932,12 +1013,27 @@ img {
   }
 
   .app-platform {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .app-platform__wp {
-    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .app-platform__tg {
     margin-right: 0;
+  }
+
+  .app-platform__tg,
+  .app-platform__wp {
+    margin-bottom: 20px;
+  }
+
+  .app-platform__store {
+    flex-grow: 1;
+    justify-content: center;
+    width: 100%;
   }
 
   .roadmap-group__item {
