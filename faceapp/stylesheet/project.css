@@ -509,14 +509,39 @@ img {
  */
 
 .roadmap-arrow {
-  position: relative;
-  height: 20px;
-  width: 100%;
   display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
 }
 
-.roadmap-arrow__svg-wrap {
+.roadmap-arrow::before {
+  content: '';
   position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: calc(100% - 15px);
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  transform: translateY(-50%);
+}
+
+.roadmap-arrow__svg-arrow,
+.roadmap-arrow__svg-point {
+  position: relative;
+  z-index: 1;
+}
+
+.roadmap-arrow__svg-arrow,
+.roadmap-arrow__svg-point {
+  top: 2px;
+}
+
+.roadmap-group__arrow {
+  max-width: 95%;
+  margin: 0 auto 30px;
 }
 
 .roadmap-group__item {
@@ -939,6 +964,10 @@ img {
 
   .product-phones-set__item {
     left: 0;
+  }
+
+  .roadmap-arrow {
+    display: none;
   }
 }
 
