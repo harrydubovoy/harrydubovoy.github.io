@@ -27,8 +27,27 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  new Splide('.js-advisors-advisors', splideOptions).mount();
+  if (global.innerWidth <= 768) {
+    const splideOptions = {
+      type: 'loop',
+      autoHeight: true,
+      arrows: true,
+      perPage: 3,
+      gap: 30,
+      breakpoints: {
+        768: {
+          perPage: 1,
+          arrows: false,
+        },
+      }
+    }
 
+    new Splide('.js-products', splideOptions).mount();
+    new Splide('.js-features', splideOptions).mount();
+    new Splide('.js-roadmap', splideOptions).mount();
+  }
+
+  new Splide('.js-advisors-advisors', splideOptions).mount();
   new Splide('.js-advisors-press', splideOptions).mount();
 
   const header = globalDocument.querySelector('#header');

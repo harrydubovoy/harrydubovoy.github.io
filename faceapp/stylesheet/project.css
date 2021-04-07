@@ -744,7 +744,11 @@ img {
   transform: none;
 }
 
-
+.feature-slider,
+.roadmap-slider,
+.products-slider {
+  display: none;
+}
 
 
 /* media queries */
@@ -1065,6 +1069,10 @@ img {
     width: 100%;
   }
 
+  .feature__description {
+    text-align: center;
+  }
+
   .roadmap-group__item {
     margin-bottom: 50px;
   }
@@ -1107,6 +1115,22 @@ img {
 
   .footer__app-info {
     margin: 16px 0;
+  }
+
+  .feature-slider,
+  .roadmap-slider,
+  .products-slider {
+    display: block;
+  }
+
+  .roadmap-group,
+  .feature-group,
+  .product-phones-set {
+    display: none;
+  }
+
+  .product-phones-image {
+    margin: 0 auto;
   }
 }
 
