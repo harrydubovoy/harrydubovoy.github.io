@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     new Splide('.js-products', splideOptions).mount();
     new Splide('.js-features', splideOptions).mount();
     new Splide('.js-roadmap', splideOptions).mount();
+    new Splide('.js-team', splideOptions).mount();
   }
 
   new Splide('.js-advisors-advisors', splideOptions).mount();

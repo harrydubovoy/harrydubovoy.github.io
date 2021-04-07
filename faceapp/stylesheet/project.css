@@ -114,13 +114,18 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
   z-index: -1;
   background: rgb(66,101,94);
   background: linear-gradient(45deg, rgba(66,101,94,1) 15%, rgba(90,40,92,1) 35%, rgba(90,40,92,1) 50%, rgba(90,40,92,1) 65%, rgba(201,61,154,1) 85%);
 }
+
+@media not all and (min-resolution:.001dpcm) { @media {
+  .page::before {
+    min-height: 125%;
+  }
+}}
 
 /*
  * header block
@@ -744,6 +749,7 @@ img {
   transform: none;
 }
 
+.team-slider,
 .feature-slider,
 .roadmap-slider,
 .products-slider {
@@ -1117,16 +1123,22 @@ img {
     margin: 16px 0;
   }
 
+  .team-slider,
   .feature-slider,
   .roadmap-slider,
   .products-slider {
     display: block;
   }
 
+  .team,
   .roadmap-group,
   .feature-group,
   .product-phones-set {
     display: none;
+  }
+
+  .team-slider {
+    margin-bottom: 30px;
   }
 
   .product-phones-image {
@@ -1146,7 +1158,7 @@ img {
   }
 
   .splide__pagination {
-    top: calc(100% + 15px);
+    top: 100%;
   }
 
   .hero__logo {
